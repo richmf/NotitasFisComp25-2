@@ -42,7 +42,7 @@ pelota, = ejes.plot([],[],'o')
 linea, = ejes.plot([],[],'--')
 
 def peli(i):
-    pelota.set_data(x[i],y[i])
+    pelota.set_data(x[i-1:i],y[i-1:i])
     linea.set_data(x[:i],y[:i])
     return (pelota,linea,)
 
